@@ -11,6 +11,7 @@ export const Form = styled.form`
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 16px;
+    border: 1px solid ${props => (props.error ? 'red' : '')};
   }
 `;
 
@@ -47,7 +48,7 @@ export const SubmitButton = styled.button.attrs(props => ({
     props.loading &&
     css`
       svg {
-        animation: ${rotate} 2s linear infirte;
+        animation: ${rotate} 2s linear;
       }
     `}
 `;
